@@ -1,0 +1,34 @@
+  body {
+    padding: .5rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: darkslateblue;
+  }
+
+  button {
+    background-color: #eee;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+  }
+  
+ input {
+  padding: 1rem;
+  font-size: 15px;
+ }

@@ -1,0 +1,10 @@
+<section role="main">
+    <article>
+        <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+        <label for="search-text">Search:</label>
+        <input type="text" class="form-control" formControlName="query" aria-describedby="search-text" 
+          placeholder="Enter text to search" (keyup)="onKeyUp()" autofocus>
+        <button type="submit" class="btn btn-success">Go!</button>
+      </form>
+    </article>
+</section>

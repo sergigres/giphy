@@ -1,0 +1,12 @@
+<h2 *ngIf="data.length">Results</h2>
+<section>
+  <article *ngFor="let gif of data">
+    <p><a href="{{gif.url}}">{{ gif.title }}</a></p>
+    <img src="{{gif?.images.downsized.url}}">
+    <span (click)="toClipboard($event, gif)">Copy to clipboard</span>
+  </article>
+</section>
+
+<section class="notification" *ngIf="notification.length">
+  <p>{{notification}}</p>
+</section>
